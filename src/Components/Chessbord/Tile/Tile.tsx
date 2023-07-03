@@ -10,10 +10,10 @@ export const Tile = ({number, image}: PropsType) => {
     return (
         number % 2 == 0 ?
             <div className={`${s.tile} ${s.blackTile}`}>
-                <img className={s.chessPieceImg} src={image}/>
+                {image && <div style={{backgroundImage: `url(${image})`}} className={s.chessPiece}></div>}
             </div>
             : <div className={`${s.tile} ${s.whiteTile}`}>
-                <img className={s.chessPieceImg} src={image}/>
+                {image && <div style={{backgroundImage: `url(${image})`}} className={s.chessPiece}></div>}
             </div>
     );
 };
