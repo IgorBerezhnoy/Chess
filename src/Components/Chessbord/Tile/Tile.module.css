@@ -1,0 +1,15 @@
+.tile{
+    width: 100px;
+    height: 100px;
+    display: grid;
+    place-content: center;
+}
+.blackTile{
+    background-color: #769456;
+}
+.whiteTile{
+    background-color: #ebebd0;
+}
+.chessPieceImg{
+    width: 80px;
+}

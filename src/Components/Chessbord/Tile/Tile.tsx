@@ -1,16 +1,20 @@
 import React from 'react';
 import s from './Tile.module.css';
 
-import rook from "./../../../imgChess/rook_b.png"
 
-type PropsType={
-    className:string
+type PropsType = {
+    number: number
+    image?: string
 }
-export const Tile = (props:PropsType) => {
+export const Tile = ({number, image}: PropsType) => {
     return (
-        <div className={props.className} >
-           <img src={rook} />
-        </div>
+        number % 2 == 0 ?
+            <div className={`${s.tile} ${s.blackTile}`}>
+                <img className={s.chessPieceImg} src={image}/>
+            </div>
+            : <div className={`${s.tile} ${s.whiteTile}`}>
+                <img className={s.chessPieceImg} src={image}/>
+            </div>
     );
 };
 

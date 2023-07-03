@@ -7,13 +7,3 @@
     grid-template-rows: repeat(8,100px);
 
 }
-.tile{
-    width: 100px;
-    height: 100px;
-}
-.blackTile{
-    background-color: #769456;
-}
-.whiteTile{
-    background-color: #ebebd0;
-}
